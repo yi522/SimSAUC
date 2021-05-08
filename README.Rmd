@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # SimSAUC
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/yi522/SimSAUC/workflows/R-CMD-check/badge.svg)](https://github.com/yi522/SimSAUC/actions)
 <!-- badges: end -->
 
 The goal of SimSAUC is to ...

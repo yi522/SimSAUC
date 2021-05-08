@@ -1,0 +1,19 @@
+---
+title: "Reproduce simulation results of SAUC"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Reproduce simulation results of SAUC}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup, eval=FALSE}
+library(SimSAUC)
+```
