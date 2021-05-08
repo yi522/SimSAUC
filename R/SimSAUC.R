@@ -2,8 +2,9 @@
 #'
 #' @param y binary outcome
 #' @param x n*p covariates
+#' @param sim_size simulation size
 #' @param parallel logic value if parallel computation is applied
-#' @param n_score if parallel computation is applied, the numbe of cores used
+#' @param n_core if parallel computation is applied, the numbe of cores used
 #' @param ratio decision rule
 #' @param seed seed for random split the data into test set and train set
 #'

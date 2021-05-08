@@ -10,15 +10,16 @@ Authors@R:
 Description: Reproduce simulation results of SAUC.
 License: Artistic-2.0
 Encoding: UTF-8
-Depends: R (>= 4.0.5)
+Depends: R (>= 4.0)
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 4.0.5)
 Config/testthat/edition: 3
 Imports: 
+    markdown,
     knitr,
     rmarkdown
 URL: https://github.com/yi522/SimSAUC

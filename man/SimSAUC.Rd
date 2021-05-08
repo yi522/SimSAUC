@@ -11,13 +11,15 @@ SimSAUC(y, x, sim_size, parallel = F, n_core = 1, ratio = 2/3, seed = 2021)
 
 \item{x}{n*p covariates}
 
+\item{sim_size}{simulation size}
+
 \item{parallel}{logic value if parallel computation is applied}
+
+\item{n_core}{if parallel computation is applied, the numbe of cores used}
 
 \item{ratio}{decision rule}
 
 \item{seed}{seed for random split the data into test set and train set}
-
-\item{n_score}{if parallel computation is applied, the numbe of cores used}
 }
 \value{
 
