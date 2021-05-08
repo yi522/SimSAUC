@@ -16,7 +16,7 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 Suggests: 
-    testthat (>= 4.0.5)
+    testthat (>= 3.0.2)
 Config/testthat/edition: 3
 Imports: 
     markdown,
