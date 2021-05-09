@@ -7,11 +7,14 @@
 SAUC(l)
 }
 \arguments{
-\item{l}{matrix containing outcome and covariates}
+\item{l}{a matrix containing outcome and markers. Please put outcome in the
+first column of the matrix, and put markers in the rest columns}
 }
 \value{
-
+it returns the SAUC estimates of coefficients while fixing the first component
+of coefficents to be 1.
 }
 \description{
-SAUC
+This function gets SAUC estimates of a logistic model while fixing the first component
+of coefficents to be 1.
 }

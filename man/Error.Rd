@@ -7,15 +7,17 @@
 Error(l, prop_case, beta)
 }
 \arguments{
-\item{l}{matrix containing outcome and covariates from test set}
+\item{l}{a matrix containing outcome and markers. Please put outcome in the
+first column of the matrix, and put markers in the rest columns}
 
-\item{prop_case}{proportion of cases in the training set}
+\item{prop_case}{threshold for decsion rule}
 
 \item{beta}{coefficients of logistic model}
 }
 \value{
-
+it returns the error rate which is the proportion of falsely
+classified subjects in the given data.
 }
 \description{
-Error
+This function calculate error rate of a logistic model in the given data.
 }

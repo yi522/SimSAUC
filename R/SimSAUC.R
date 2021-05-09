@@ -1,12 +1,26 @@
 #' SimSAUC
-#' @param y binary outcome
-#' @param x n*p covariates
+#'
+#' This is a function to automatically run simulations given a simulated data.
+#' This function will split data into training set and testing set for a given times.
+#' It then computed SAUC estimator and MLE in training set. And using the estimated model,
+#' function computed error rate in the testing set.
+#'
+#'
+#' @param y binary outcome of a logistic model
+#' @param x a dataframe containing markers
 #' @param sim_size simulation size
-#' @param parallel logic value if parallel computation is applied
-#' @param n_core if parallel computation is applied, the numbe of cores used
-#' @param ratio decision rule
-#' @param seed seed for random split the data into test set and train set
-#' @return
+#' @param parallel TRUE if parallel computation is applied
+#' @param n_core the numbe of cores used in parallel computation
+#' @param ratio threshold for decsion rule
+#' @param seed random seed for reproducibility
+#'
+#' @return 'beta_SAUC mean' is the SAUC estimates from simulations.
+#' 'beta_Logistic' is the mean MLE from simulations. 'sd_of_beta_SAUC' is the
+#' standard error of SAUC estimates. 'sd_of_beta_Logistic' is the standard error
+#' of SAUC estimates. 'error_SAUC' is mean error of SAUC and 'error_Logistic'
+#' is mean error of MLE. 'sd_of_error_SAUC' and 'sd_of_error_Logistic' are
+#' standard errors of mean errors of SAUC and MLE.
+#'
 #' @importFrom parallel makeCluster
 #' @importFrom parallel clusterSetRNGStream
 #' @importFrom parallel parLapply

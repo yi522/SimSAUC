@@ -7,11 +7,14 @@
 Logistic(l)
 }
 \arguments{
-\item{l}{matrix containing outcome and covariates}
+\item{l}{a matrix containing outcome and markers. Please put outcome in the
+first column of the matrix, and put markers in the rest columns}
 }
 \value{
-
+it returns the MLE of coefficients while fixing the first component
+of coefficents to be 1.
 }
 \description{
-Logistic
+This a function to get MLE of a logitic model while fixing the first component
+of coefficents to be 1.
 }
