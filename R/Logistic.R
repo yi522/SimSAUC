@@ -1,13 +1,12 @@
 #' Logistic
 #'
-#' This a function to get MLE of a logitic model while fixing the first component
-#' of coefficents to be 1.
+#' This a function to get MLE of a logitic model
 #'
 #'
 #' @param l a matrix containing outcome and markers. Please put outcome in the
 #' first column of the matrix, and put markers in the rest columns
-#' @return it returns the MLE of coefficients while fixing the first component
-#' of coefficents to be 1.
+#' @return it returns the MLE of coefficients
+#' @importFrom stats glm
 #' @export
 
 Logistic <- function(l){

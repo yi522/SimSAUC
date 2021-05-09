@@ -8,6 +8,8 @@
 #' first column of the matrix, and put markers in the rest columns
 #' @return it returns the SAUC estimates of coefficients while fixing the first component
 #' of coefficents to be 1.
+#' @importFrom stats runif
+#'
 #' @export
 
 

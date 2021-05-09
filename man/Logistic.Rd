@@ -11,10 +11,8 @@ Logistic(l)
 first column of the matrix, and put markers in the rest columns}
 }
 \value{
-it returns the MLE of coefficients while fixing the first component
-of coefficents to be 1.
+it returns the MLE of coefficients
 }
 \description{
-This a function to get MLE of a logitic model while fixing the first component
-of coefficents to be 1.
+This a function to get MLE of a logitic model
 }

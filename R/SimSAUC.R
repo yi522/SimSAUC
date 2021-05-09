@@ -26,6 +26,9 @@
 #' @importFrom parallel parLapply
 #' @importFrom parallel mclapply
 #' @importFrom parallel stopCluster
+#' @importFrom stats sd
+#' @importFrom stats runif
+#' @importFrom stats binomial
 #' @export
 
 
