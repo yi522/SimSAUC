@@ -1,12 +1,7 @@
 #' SAUC
-#'
 #' @param l matrix containing outcome and covariates
-#'
 #' @return
-#'
-#'
 #' @export
-#'
 
 
 
@@ -14,9 +9,9 @@ SAUC <- function(l){
   ind <- l[, 1]
   z.dat <- l[, 2:ncol(l)]
   # Cross Validation####
-  sigma.n<-0.50; # --- sigma.n selected using another program
+  sigma.n<-0.10; # --- sigma.n selected using another program
   anchor<-1;
-  V<- 3; step<- 1000; increase<-0.01; tau<-0.5;
+  V<- 3; step<- 1000; increase<-0.01; tau<-1;
 
   samplesize<-nrow(z.dat);
   num.cov<-ncol(z.dat);
@@ -120,11 +115,11 @@ SAUC <- function(l){
   step.est<-ss[criteria==max(criteria)];
 
   # Estimation####
-  sigma.n<-0.50 # --- sigma.n selected using another program
+  sigma.n<-0.10 # --- sigma.n selected using another program
   anchor<-1
   step<- step.est    # --- number of iterations estimated from cross validation
   increase<-0.01
-  tau<-0.5
+  tau<-1
 
   samplesize<-nrow(z.dat)
   num.cov<-ncol(z.dat)

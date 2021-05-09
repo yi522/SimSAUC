@@ -1,5 +1,4 @@
 #' SimSAUC
-#'
 #' @param y binary outcome
 #' @param x n*p covariates
 #' @param sim_size simulation size
@@ -7,17 +6,14 @@
 #' @param n_core if parallel computation is applied, the numbe of cores used
 #' @param ratio decision rule
 #' @param seed seed for random split the data into test set and train set
-#'
 #' @return
-#'
 #' @importFrom parallel makeCluster
 #' @importFrom parallel clusterSetRNGStream
 #' @importFrom parallel parLapply
 #' @importFrom parallel mclapply
 #' @importFrom parallel stopCluster
-#'
 #' @export
-#'
+
 
 
 SimSAUC <- function(y, x, sim_size, parallel=F, n_core=1, ratio=2/3, seed=2021){
@@ -86,9 +82,9 @@ SimSAUC <- function(y, x, sim_size, parallel=F, n_core=1, ratio=2/3, seed=2021){
   er_sd_lr <- sd(er_lr)
   sim_res <- list(beta_mean, beta_sd, beta_mean_lr, beta_sd_lr,
                   er_mean, er_sd, er_mean_lr, er_sd_lr)
-  names(sim_res) <- c("beta_SAUC", "beta_Logistic", "sd_of_beta_SAUC",
-                      "sd_of_beta_Logistic", "error_SAUC", "error_Logistic",
-                      "sd_of_error_SAUC", "sd_of_error_Logistic")
+  names(sim_res) <- c("beta_SAUC", "sd_of_beta_SAUC", "beta_Logistic",
+                      "sd_of_beta_Logistic", "error_SAUC", "sd_of_error_SAUC",
+                      "error_Logistic", "sd_of_error_Logistic")
   return(sim_res)
 }
 

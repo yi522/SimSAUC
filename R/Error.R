@@ -1,13 +1,9 @@
 #' Error
-#'
 #' @param l matrix containing outcome and covariates from test set
 #' @param prop_case proportion of cases in the training set
 #' @param beta coefficients of logistic model
-#'
 #' @return
-#'
 #' @export
-#'
 
 
 Error <- function(l, prop_case, beta){
